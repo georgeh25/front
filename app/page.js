@@ -140,12 +140,6 @@ export default function Home() {
                           </span>
                         ))}
                     </div>
-                    <Link
-                      href={`/projects/${project._id}`}
-                      className="btn btn-primary"
-                    >
-                      Ver Proyecto
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -160,7 +154,7 @@ export default function Home() {
 
       {/* Social Networks Section */}
       <section className="text-center">
-        <h2 className="mb-4">Conectemos</h2>
+        <h2 className="mb-4">Contactemos</h2>
         {socialNetworks && socialNetworks.length > 0 ? (
           <div className="d-flex justify-content-center gap-4">
             {socialNetworks.map((network) => (
