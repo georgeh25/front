@@ -40,3 +40,8 @@ a {
     color-scheme: dark;
   }
 }
+
+.active-link {
+  text-decoration: underline;
+  font-weight: bold;
+}
