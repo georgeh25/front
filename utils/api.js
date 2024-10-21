@@ -2,8 +2,8 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 const API_ENDPOINT = `${API_BASE_URL}/api/v1`;
 
 export function getFullImageUrl(relativeUrl) {
-  if (!relativeUrl) return "/api/placeholder/300/300"; // Placeholder image
-  if (relativeUrl.startsWith("http")) return relativeUrl; // Already a full URL
+  if (!relativeUrl) return "/api/placeholder/300/300";
+  if (relativeUrl.startsWith("http")) return relativeUrl;
   return `${API_BASE_URL}${relativeUrl}`;
 }
 

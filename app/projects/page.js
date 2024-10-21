@@ -58,12 +58,12 @@ export default function Projects() {
                         </span>
                       ))}
                   </div>
-                  <Link
+                  {/* <Link
                     href={`/projects/${project._id}`}
                     className="btn btn-primary"
                   >
                     Ver Proyecto
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
