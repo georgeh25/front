@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Developer Portfolio
 
-## Getting Started
+This is a developer portfolio website built with Next.js, showcasing projects, skills, and professional experience.
 
-First, run the development server:
+## Features
 
-```bash
+- Responsive design
+- Dynamic content loading from a backend API
+- Sections for About Me, Projects, Technologies, and Work Experience
+- Social media links
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (v14 or later)
+- npm or yarn
+- A backend API (Make sure you have the API URL)
+
+## Installation
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/your-username/developer-portfolio.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```
+   cd developer-portfolio
+   ```
+
+3. Install dependencies:
+
+   ```
+   npm install
+   # or
+   yarn install
+   ```
+
+4. Create a `.env.local` file in the root directory and add your API URL:
+   ```
+   NEXT_PUBLIC_API_BASE_URL=https://your-api-url.com
+   ```
+
+## Development
+
+To run the development server:
+
+```
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Production Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Building for Production
 
-## Learn More
+To create a production build:
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm run build
+# or
+yarn build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Running in Production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+After building, you can start the production server:
 
-## Deploy on Vercel
+```
+npm start
+# or
+yarn start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Deploying to a Hosting Platform
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project can be easily deployed to platforms like Vercel, Netlify, or any other platform that supports Next.js applications.
+
+#### Deploying to Vercel
+
+1. Push your code to a GitHub repository.
+2. Go to [Vercel](https://vercel.com) and sign up or log in.
+3. Click on "Import Project" and select your GitHub repository.
+4. Vercel will automatically detect that it's a Next.js project and set up the build settings.
+5. Add your environment variables (like `NEXT_PUBLIC_API_BASE_URL`) in the Vercel project settings.
+6. Deploy the project.
+
+#### Deploying to Other Platforms
+
+For other platforms, follow their specific guidelines for deploying Next.js applications. Generally, you'll need to:
+
+1. Set up your build command as `next build`
+2. Set your start command as `next start`
+3. Configure your environment variables on the platform
+
+## Environment Variables
+
+- `NEXT_PUBLIC_API_BASE_URL`: The base URL of your backend API
+
+Make sure to set this environment variable in your deployment platform for production use.
